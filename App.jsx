@@ -21,7 +21,12 @@ import * as THREE from "three";                       // 3D engine (npm install 
 import "./App.css";
 import { makePersona, makeBrain } from "./chatEngine.js";
 import { createWorld } from "./world3d.js";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+export default defineConfig({
+  plugins: [react()],
+})
 // ---------- LEVELS ----------
 // Both single messages and the overall vibe are put on this 6-step scale:
 //   0 Dead boring (<10) | 1 Very boring (<30) | 2 Boring (<50) | 3 Normal (<65) | 4 Lively (<80) | 5 Very lively (80+)
