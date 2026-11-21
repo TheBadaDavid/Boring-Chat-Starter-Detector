@@ -16,7 +16,7 @@
 //    world3d.js     the 3D park, people, time of day and hover effects (see that file)
 //    App.css        all the styling
 // =====================================================================================
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import * as THREE from "three";                       // 3D engine (npm install three)
 import "./App.css";
 import { makePersona, makeBrain } from "./chatEngine.js";
